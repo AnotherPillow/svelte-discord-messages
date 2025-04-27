@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
     export let src: string;
     export let alt: string = '';
     export let width: number | undefined = undefined;

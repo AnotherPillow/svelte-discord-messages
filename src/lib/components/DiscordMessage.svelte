@@ -17,7 +17,7 @@
         max-width: 520px;
         color: #dbdee1;
         box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-        margin-bottom: 2px; /* Accurate Discord gap between messages */
+        margin-bottom: 2px;
     }
   
     .avatar {
