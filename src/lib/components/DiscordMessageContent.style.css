@@ -1,0 +1,76 @@
+.content {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 2px;
+    white-space: pre-line;
+    word-break: break-word;
+    color: inherit;
+    font-family: inherit;
+}
+
+.content p {
+    margin: 0;
+}
+
+.content strong, .content b {
+    font-weight: 700;
+    color: #fff;
+}
+.content em, .content i {
+    font-style: italic;
+    color: #dbdee1;
+}
+.content u {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: #dbdee1;
+}
+.content s, .content del {
+    text-decoration: line-through;
+    color: #72767d;
+}
+.content code {
+    background: #2f3136;
+    color: #e3e5e8;
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: 0 1px;
+}
+.content pre {
+    background: #2f3136;
+    color: #e3e5e8;
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 6px 0;
+    overflow-x: auto;
+}
+.content blockquote {
+    border-left: 4px solid #4e5058;
+    background: #232428;
+    color: #b9bbbe;
+    margin: 4px 0;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.content a {
+    color: #00a8fc;
+    text-decoration: underline;
+    word-break: break-all;
+}
+.content img {
+    max-width: 100%;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+.content img.emoji {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin: 0 1px;
+}
