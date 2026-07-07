@@ -4,6 +4,16 @@
     export let width: number | undefined = undefined;
     export let height: number | undefined = undefined;
 </script>
+
+<div class="image-container" aria-label={alt}>
+    <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        draggable="false"
+    />
+</div>
   
 <style>
     .image-container {
@@ -37,14 +47,3 @@
         object-fit: contain;
     }
 </style>
-  
-<div class="image-container" aria-label={alt}>
-    <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        draggable="false"
-    />
-</div>
-  

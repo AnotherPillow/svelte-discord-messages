@@ -1,7 +1,10 @@
 <script>
+
     import DiscordMessage from "$lib/components/DiscordMessage.svelte";
     import DiscordMessageContent from "$lib/components/DiscordMessageContent.svelte";
+    import DiscordMessageEmbed from "$lib/components/DiscordMessageEmbed.svelte";
     import DiscordMessageImage from "$lib/components/DiscordMessageImage.svelte";
+    import DiscordMessageJSON from "$lib/components/DiscordMessageJSON.svelte";
 
 </script>
 <h1>Welcome to your library project</h1>
@@ -18,5 +21,41 @@
             src="https://cdn.nest.rip/uploads/de329044-9e85-4a72-8b37-f7352df4da22.png"
             alt="desert shoveling"
         />
+        <DiscordMessageEmbed embed={{
+            color: 0xabcdef,
+            description: 'this is the description of the embed. it describes the embed descriptively',
+            url: 'https://pillow.rocks',
+            timestamp: new Date().toISOString(),
+            title: 'this is an embed',
+            fields: [
+                {
+                    inline: true,
+                    name: 'field 1',
+                    value: 'value 1'
+                },
+                {
+                    inline: true,
+                    name: 'field 2',
+                    value: 'value 2'
+                },
+                {
+                    inline: false,
+                    name: 'field 3',
+                    value: 'value 3'
+                },
+                {
+                    inline: false,
+                    name: 'field 4',
+                    value: 'value 4'
+                },
+            ],
+            image: {
+                url: 'https://pillow.rocks/img/pillowdotrocks_88x31_bpnda.gif'
+            }
+        }}/>
     </DiscordMessageContent>
 </DiscordMessage>
+
+<hr>
+
+<DiscordMessageJSON message={{content: 'hi this is from a `json object`', username: 'person'}} />
