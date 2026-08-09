@@ -16,7 +16,7 @@
   authorColour="#575287"
   authorImage="https://cdn.nest.rip/uploads/8b364056-fb01-470a-bda3-5bbb3b2c1365.png"
 >
-    <DiscordMessageContent content={`Hello **bold** __underline__ *italic* _italic two_ \`code\``}>
+    <DiscordMessageContent content={`Hello **bold** __underline__ *italic* _italic two_ \`code\` <script\>alert(1)</script>`}>
         <DiscordMessageImage
             src="https://cdn.nest.rip/uploads/de329044-9e85-4a72-8b37-f7352df4da22.png"
             alt="desert shoveling"

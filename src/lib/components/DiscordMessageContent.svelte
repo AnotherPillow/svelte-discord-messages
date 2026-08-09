@@ -7,6 +7,7 @@
     export let contentFirst: boolean = true
   
     let mdhtml = marked.parse(content
+        .replaceAll("<", '&lt;')
         .replace(/__(.*?)__/g, '<u>$1</u>')
         .replace(/~~(.*?)~~/g, '<s>$1</s>')
     )
