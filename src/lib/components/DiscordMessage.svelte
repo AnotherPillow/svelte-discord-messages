@@ -2,8 +2,8 @@
     import '@fontsource-variable/open-sans';
     export let authorName: string = 'User';
     export let authorColour: string = '#FFFFFF';
-    export let authorImage: string = 'https://cdn.nest.rip/uploads/8b364056-fb01-470a-bda3-5bbb3b2c1365.png';
-    export let timeStamp: Date = new Date();
+    export let authorImage: string = 'https://discord.com/assets/9855d7e3b9780976.png'; // default green pfp
+    export let timeStamp: Date = new Date("2026-05-01");
 </script>
   
 <style>
@@ -57,7 +57,16 @@
     <img class="avatar" src={authorImage} alt="User avatar" />
     <div class="message-content">
         <span class="author" style="color: {authorColour}">{authorName}</span>
-        <span class="timestamp">{timeStamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+        <span class="timestamp">{Date.now() - timeStamp.getTime() > 24 * 60 * 60 * 1000  // true if >24 hours ago
+            ? timeStamp.toLocaleString([], {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false,
+            })
+            : timeStamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         <slot />
     </div>
 </div>
